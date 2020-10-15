@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="btp.css"
+      <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact</title>
+  </head>
+  <body class="contactbody">
+    <header>
+      <a href="accueil.html"
+        ><img src="images/logo/logo_large.png" id="logo"
+      /></a>
+    </header>
+
+    <main class="contactmain">
+      <nav id="nav_bar">
+        <ul>
+          <li><a href="accueil.html" class="nav_underline">Accueil</a></li>
+          <li>
+            <a href="presentation.html" class="nav_underline">Notre groupe</a>
+          </li>
+          <li><a href="equipe.html" class="nav_underline">L'équipe</a></li>
+          <li>
+            <a href="contact.html" class="nav_underline">Contactez-nous</a>
+          </li>
+          <li>
+            <a href="realisations.html" class="nav_underline"
+              >Nos réalisations</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="contactsection1">
+        <h1>Formulaire de contact</h1>
+        <p>Si vous désirez nous contacter, veuillez remplir ce formulaire</p>
+        <p>Nous reviendrons rapidemment vers vous</p>
+      </section>
+      <section class="contactform">
+        <form>
+          <div class="contactorganizer">
+            <label for="particulier" class="label-particulier">
+              Quelle est votre situation?
+            </label>
+            <select name="particulier" class="label-particulier">
+              <option value="">--Veuillez sélectionner--</option>
+              <option value="bep">Particulier</option>
+              <option value="bac">Professionnel</option>
+              <option value="bac+2">Organisation</option>
+              <option value="bac+2">Collectivité</option>
+            </select>
+          </div>
+
+          <div class="contactorganizer">
+            <label for="raisonsociale" class="label-raisonsociale">
+              Raison sociale
+            </label>
+            <input
+              type="text"
+              name="label-raisonsociale"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="contactorganizer">
+            <label for="siren" class="label-siren">SIRET/SIREN</label>
+            <input type="text" name="label-siren" required autocomplete="off" />
+          </div>
+
+          <div class="contactorganizer">
+            <label for="name" class="label-name"> Nom </label>
+            <input type="text" name="label-name" required autocomplete="off" />
+          </div>
+
+          <div class="contactorganizer">
+            <label for="lastname" class="label-lastname"> Prénom </label>
+            <input
+              type="text"
+              name="label-lastname"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="contactorganizer">
+            <label for="phone" class="label-phone"> Téléphone </label>
+            <input type="tel" name="label-phone" required autocomplete="off" />
+          </div>
+
+          <div class="contactorganizer">
+            <label for="mail" class="label-mail">Adresse mail</label>
+            <input type="mail" name="label-mail" required autocomplete="off" />
+          </div>
+
+          <div class="contactorganizer">
+            <label for="place" class="label-place">
+              Quel est le type de lieu ?
+            </label>
+            <select name="place" class="label-place">
+              <option value="">--Veuillez sélectionner--</option>
+              <option value="flat">Appartement</option>
+              <option value="house">Maison</option>
+              <option value="office">Bureau</option>
+              <option value="outside">Extérieur</option>
+            </select>
+          </div>
+
+          <div class="contactorganizer">
+            <label for="project" class="label-project">
+              Expliquez-nous brièvement votre projet
+            </label>
+            <input
+              type="text"
+              name="label-project"
+              required
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="contactorganizer">
+            <label for="dispo" class="label-dispo">
+              Vos disponibilités pour un devis
+            </label>
+            <input type="date" name="label-dispo" required autocomplete="off" />
+          </div>
+
+          <div class="contactorganizer">
+            <label for="start" class="label-start">
+              Date de démarrage voulue
+            </label>
+            <input type="date" name="label-start" required autocomplete="off" />
+          </div>
+        </form>
+      </section>
+      <section class="contactinfo"></section>
+    </main>
+    <footer class="contactfooter">/////le footer se fait attendre</footer>
+  </body>
+</html>

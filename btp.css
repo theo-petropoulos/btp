@@ -5,64 +5,64 @@
 /* 4-CONTACT */
 /* 5-REALISATIONS */
 
-html{
-	margin:0;
-	padding:0;
+html {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-	margin:0;
-	padding:0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-header{
-	text-align:center;
-	padding:2%;
+header {
+  text-align: center;
+  padding: 2%;
 }
 
-#logo{
-	width:12%;
+#logo {
+  width: 12%;
 }
 
-#nav_bar{
-	background:white;
-	display:flex;
-	position:sticky;
-	top:0;
-	justify-content: center;
-	color:#0B005D;
+#nav_bar {
+  background: white;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  color: #0b005d;
 }
 
-#nav_bar ul{
-	list-style-type: none;
-	padding:0;
-	font-family:'Work Sans', 'courier';
-	display:flex;
-	justify-content:space-between;
-	flex-grow:0.8;
+#nav_bar ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Work Sans", "courier";
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0.8;
 }
 
-#nav_bar a{
-	text-decoration:none;
-	color:inherit;
-	position:relative;
+#nav_bar a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
 }
 
-.nav_underline{
-	position:relative;
+.nav_underline {
+  position: relative;
 }
 
-.nav_underline::before{
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px; 
-	bottom:-5px;
-	left: 0; 
-	background-color: #6590DA;
-	visibility: hidden;
-	transform: scaleX(0);
-	transition: all 0.4s ease-in-out;
+.nav_underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #6590da;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out;
 }
 
 .nav_underline:hover::before {
@@ -72,25 +72,25 @@ header{
 
 /* 1-ACCUEIL */
 
-.accueil{
-	font-family:'Work Sans', 'courier';
+.accueil {
+  font-family: "Work Sans", "courier";
 }
 
-.accueil .background{
-	background-image:url('images/stock/skyscrapers.jpg');
-	height:100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.accueil .background {
+  background-image: url("images/stock/skyscrapers.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.accueil .grid_container{
-	display:grid;
-	grid-template-rows: repeat(auto-fit, minmax(200px,1fr));
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	margin:0 5% 0 5%;
-	grid-template-areas:
+.accueil .grid_container {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 5% 0 5%;
+  grid-template-areas:
     "stock_photo1 stock_photo1 stock_text1 stock_text1"
     "stock_photo1 stock_photo1 stock_text1 stock_text1"
     "stock_text2 stock_text2 stock_photo2 stock_photo2"
@@ -99,29 +99,41 @@ header{
     "stock_photo3 stock_photo3 stock_text3 stock_text3";
 }
 
-.stock_text1 { grid-area: stock_text1; }
-.stock_text2 { grid-area: stock_text2; }
-.stock_text3 { grid-area: stock_text3; }
-
-.stock_photo1 { grid-area: stock_photo1;}
-.stock_photo2 { grid-area: stock_photo2;}
-.stock_photo3 { grid-area: stock_photo3;}
-
-
-.grid_container img{
-	max-width:100%;
-	min-width:100%;
-	min-height:100%;
-	object-fit: cover;
+.stock_text1 {
+  grid-area: stock_text1;
+}
+.stock_text2 {
+  grid-area: stock_text2;
+}
+.stock_text3 {
+  grid-area: stock_text3;
 }
 
-.grid_container{
-	background:white;
-	font-size:1.6em;
+.stock_photo1 {
+  grid-area: stock_photo1;
+}
+.stock_photo2 {
+  grid-area: stock_photo2;
+}
+.stock_photo3 {
+  grid-area: stock_photo3;
 }
 
-.stock_text2, .stock_text3{
-	margin:5% 2% 5% 2%;
+.grid_container img {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.grid_container {
+  background: white;
+  font-size: 1.6em;
+}
+
+.stock_text2,
+.stock_text3 {
+  margin: 5% 2% 5% 2%;
 }
 
 /* 2-PRESENTATION */
@@ -129,5 +141,49 @@ header{
 /* 3-EQUIPE */
 
 /* 4-CONTACT */
+.contactmain {
+  background: url(images/contact/contact-us-1908762_1280.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: right;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.contactsection1 h1 {
+  font-size: 1.8em;
+}
+.contactsection1 p {
+  font-size: 1.3em;
+}
+
+.contactform {
+  text-align: center;
+  padding-left: 5%;
+}
+.contactorganizer {
+  width: 20%;
+  height: 15%;
+  text-align: left;
+  padding-bottom: 20px;
+  background: rgba(68, 117, 160, 0.692);
+}
+.contactorganizer label {
+  display: block;
+  padding-top: 8px;
+  padding-left: 15px;
+
+  margin: 0% 0 0.5% 0;
+}
+
+.contactorganizer input,
+select {
+  margin-left: 3%;
+  width: 90%;
+}
 
 /* 5-REALISATIONS */
+
+* {
+  font-family: "Work Sans", sans-serif;
+}
