@@ -31,6 +31,7 @@ header {
   top: 0;
   justify-content: center;
   color: #0b005d;
+  box-shadow: 0px 20px 30px -15px rgba(196,196,196,0.7);
 }
 
 #nav_bar ul {
@@ -136,6 +137,7 @@ header {
 
 .accueil h3{
 	font-size:1.6em;
+  margin-top:0;
 }
 
 /* 2-PRESENTATION */

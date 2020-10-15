@@ -1,4 +1,4 @@
-Footer & Header communs à toutes les pages
+﻿Footer & Header communs à toutes les pages
 
 
 Accueil :
@@ -10,7 +10,7 @@ PAREDE
 Présentation :
 --------------
 Informations sur la société 
-Des chiffres ( CA, nombre d'employés, nombre de réalisations ... )
+Des chiffres ( CA, nombre d'employés, nombre de réalisations, partenaires, implantation ... )
 
 
 Equipe :
