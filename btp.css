@@ -331,6 +331,7 @@ header {
   justify-content: center;
   align-items:center;
   box-shadow:0px 0px 15px 5px rgba(0,0,0, 0.3);
+  transition:all 0.9s ease-in;
 }
 
 .image img{
@@ -430,6 +431,10 @@ header {
   transform:translate(-80px, -65px);
   transition:all 0.5s ease-in-out;
   padding:5%;
+}
+
+#facebook_footer, #twitter_footer, #youtube_footer, #linkedin_footer, #instagram_footer, #mail_footer, #survol{
+  transition:0.8s ease-in;
 }
 
 #facebook_footer i{
