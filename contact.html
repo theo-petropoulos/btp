@@ -45,107 +45,88 @@
         <p>Si vous désirez nous contacter, veuillez remplir ce formulaire</p>
         <p>Nous reviendrons rapidemment vers vous</p>
       </section>
-      <section class="contactform">
-        <form>
-          <div class="contactorganizer">
-            <label for="particulier" class="label-particulier">
-              Quelle est votre situation?
-            </label>
-            <select name="particulier" class="label-particulier">
-              <option value="">--Veuillez sélectionner--</option>
-              <option value="bep">Particulier</option>
-              <option value="bac">Professionnel</option>
-              <option value="bac+2">Organisation</option>
-              <option value="bac+2">Collectivité</option>
-            </select>
-          </div>
 
-          <div class="contactorganizer">
-            <label for="raisonsociale" class="label-raisonsociale">
-              Raison sociale
-            </label>
-            <input
-              type="text"
-              name="label-raisonsociale"
-              required
-              autocomplete="off"
-            />
-          </div>
-
-          <div class="contactorganizer">
-            <label for="siren" class="label-siren">SIRET/SIREN</label>
-            <input type="text" name="label-siren" required autocomplete="off" />
-          </div>
-
-          <div class="contactorganizer">
-            <label for="name" class="label-name"> Nom </label>
-            <input type="text" name="label-name" required autocomplete="off" />
-          </div>
-
-          <div class="contactorganizer">
-            <label for="lastname" class="label-lastname"> Prénom </label>
-            <input
-              type="text"
-              name="label-lastname"
-              required
-              autocomplete="off"
-            />
-          </div>
-
-          <div class="contactorganizer">
-            <label for="phone" class="label-phone"> Téléphone </label>
-            <input type="tel" name="label-phone" required autocomplete="off" />
-          </div>
-
-          <div class="contactorganizer">
-            <label for="mail" class="label-mail">Adresse mail</label>
-            <input type="mail" name="label-mail" required autocomplete="off" />
-          </div>
-
-          <div class="contactorganizer">
-            <label for="place" class="label-place">
-              Quel est le type de lieu ?
-            </label>
-            <select name="place" class="label-place">
-              <option value="">--Veuillez sélectionner--</option>
-              <option value="flat">Appartement</option>
-              <option value="house">Maison</option>
-              <option value="office">Bureau</option>
-              <option value="outside">Extérieur</option>
-            </select>
-          </div>
-
-          <div class="contactorganizer">
-            <label for="project" class="label-project">
-              Expliquez-nous brièvement votre projet
-            </label>
-            <input
-              type="text"
-              name="label-project"
-              required
-              autocomplete="off"
-            />
-          </div>
-
-          <div class="contactorganizer">
-            <label for="dispo" class="label-dispo">
-              Vos disponibilités pour un devis
-            </label>
-            <input type="date" name="label-dispo" required autocomplete="off" />
-          </div>
-
-          <div class="contactorganizer">
-            <label for="start" class="label-start">
-              Date de démarrage voulue
-            </label>
-            <input type="date" name="label-start" required autocomplete="off" />
-          </div>
-        </form>
-      </section>
       <section class="contactinfo"></section>
+
+      <form class="myForm">
+        <label for="customer-type" class="customer-type">
+          Quelle est votre situation?
+        </label>
+        <select name="customer-type" class="customer-type">
+          <option value="">--Veuillez sélectionner--</option>
+          <option value="customer">Particulier</option>
+          <option value="professionnal">Professionnel</option>
+          <option value="organization">Organisation</option>
+          <option value="collectivity">Collectivité</option>
+        </select>
+
+        <label for="company-name">Raison sociale</label>
+        <input type="text" name="company-name" id="company-name" required />
+
+        <label for="company-id">SIREN / SIRET</label>
+        <input type="text" name="company-id" id="company-id" required />
+
+        <label for="name">NOM</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="name">Prénom</label>
+        <input type="text" name="lastname" id="lastname" required />
+
+        <label for="name">Téléphone</label>
+        <input type="tel" name="phone" id="phone" required />
+
+        <label for="email_address">Email </label>
+        <input type="email" name="email_address" id="email_address" />
+
+        <label for="comments">Décrivez nous votre projet</label>
+        <textarea name="comments" id="comments" maxlength="500"></textarea>
+
+        <button>Submit</button>
+      </form>
     </main>
-    <footer class="contactfooter">
-      /////le <i class="fab fa-facebook"></i>ooter se fait attendre
+
+    <footer id="main_footer">
+      <div id="footer_networks">
+        <div id="hoverable_logo">
+          <img src="images/logo/logo_alt.png" alt="" id="logo_footer" />
+          <a href="" id="facebook_footer" class="rs"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="" id="twitter_footer" class="rs"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="" id="instagram_footer" class="rs"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <a href="" id="linkedin_footer" class="rs"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="" id="youtube_footer" class="rs"
+            ><i class="fab fa-youtube-square"></i
+          ></a>
+          <a href="" id="mail_footer" class="rs"
+            ><i class="fas fa-envelope-square"></i
+          ></a>
+        </div>
+
+        <span id="survol"><br />Survolez-moi</span>
+      </div>
+
+      <div id="links1">
+        <ul id="list_links1">
+          <li><a href="">Presse</a></li>
+          <li><a href="">Recrutement</a></li>
+          <li><a href="">Plan du site</a></li>
+        </ul>
+      </div>
+
+      <div id="links2">
+        <ul id="list_links2">
+          <li><a href="">Confidentialité</a></li>
+          <li><a href="">Accessibilité</a></li>
+          <li><a href="">Mentions légales</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
