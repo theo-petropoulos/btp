@@ -5,6 +5,10 @@
 /* 4-CONTACT */
 /* 5-REALISATIONS */
 
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -22,6 +26,7 @@ header {
 
 #logo {
   width: 12%;
+  min-width:150px;
 }
 
 #nav_bar {
@@ -62,7 +67,7 @@ header {
 	left: 0; 
 	visibility: hidden;
 	transform: scaleX(0);
-  	background-color: #3E3A60;
+  background-color: #3E3A60;
 	transition: all 0.4s ease-in-out;
 }
 
@@ -77,7 +82,7 @@ header {
   font-family: "Work Sans", "courier";
 }
 
-.accueil .background {
+#accueil_background {
   background-image: url("images/stock/skyscrapers.jpg");
   height: 100%;
   background-attachment: fixed;
@@ -86,58 +91,54 @@ header {
   background-size: cover;
 }
 
-.accueil .grid_container {
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.accueil .container{
+  background:white;
   margin: 0 5% 0 5%;
-  grid-template-areas:
-    "stock_photo1 stock_photo1 stock_text1 stock_text1"
-    "stock_photo1 stock_photo1 stock_text1 stock_text1"
-    "stock_text2 stock_text2 stock_photo2 stock_photo2"
-    "stock_text2 stock_text2 stock_photo2 stock_photo2"
-    "stock_photo3 stock_photo3 stock_text3 stock_text3"
-    "stock_photo3 stock_photo3 stock_text3 stock_text3";
+  display:flex;
+  flex-direction:column;
 }
 
-.stock_text1 {
-  grid-area: stock_text1;
-}
-.stock_text2 {
-  grid-area: stock_text2;
-}
-.stock_text3 {
-  grid-area: stock_text3;
+.accueil .container_flex{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 
-.stock_photo1 {
-  grid-area: stock_photo1;
-}
-.stock_photo2 {
-  grid-area: stock_photo2;
-}
-.stock_photo3 {
-  grid-area: stock_photo3;
+.accueil .stock_photo{
+  width:50%;
+  min-width:300px;
+  flex-grow:999999;
 }
 
-.grid_container img {
-  max-width: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+.accueil .stock_photo img{
+  width:100%;
+  height:100%;
 }
 
-.grid_container{
-	background:white;
+#container_reverse{
+  flex-direction:row-reverse;
 }
 
-.stock_text1, .stock_text2, .stock_text3{
-	margin:auto 4% auto 4%;
+.accueil .stock_text{
+	margin:auto 5% auto 5%;
+  padding:5% 0 5% 0;
+  width:40%;
+  min-width:400px;
+  flex-grow:1;
+  color:#2F2775;
+  font-size:1.1em;
 }
 
 .accueil h3{
-	font-size:1.6em;
+	font-size:1.8em;
   margin-top:0;
+  color:#0B005D;
+  letter-spacing:2px;
+}
+
+.accueil strong, .accueil em{
+  font-style:inherit;
+  font-weight:inherit;
 }
 
 /* 2-PRESENTATION */
@@ -180,14 +181,130 @@ header {
   margin: 0% 0 0.5% 0;
 }
 
-.contactorganizer input,
-select {
+.contactorganizer input, select {
   margin-left: 3%;
   width: 90%;
 }
 
 /* 5-REALISATIONS */
 
-* {
-  font-family: "Work Sans", sans-serif;
+#realisations_background {
+  background-image: url("images/stock/city_background.png");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+#realisations_gallery{
+  display:flex;
+  justify-content: center;
+  padding:5% 0 5% 0;
+}
+
+.image{
+  width:150px;
+  height:400px;
+  overflow:hidden;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  box-shadow:0px 0px 15px 5px rgba(0,0,0, 0.3);
+}
+
+.image img{
+  height:100%;
+  object-fit: cover;
+}
+
+.image:hover{
+  width:35%;
+  transition:all 0.9s ease-in-out;
+  box-shadow: 0px 0px 15px 5px rgba(20,20,20,0.7);
+  z-index:5;
+}
+
+
+
+/* FOOTER */
+
+#main_footer li{
+  list-style-type: none;
+}
+
+#main_footer ul{
+  padding-left:0;
+}
+
+#main_footer a{
+  text-decoration:none;
+  position: relative;
+}
+
+#links1 a::before, #links2 a::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; 
+  bottom:-5px;
+  left: 0; 
+  visibility: hidden;
+  transform: scaleX(0);
+  background-color: #3E3A60;
+  transition: all 0.4s ease-in-out;
+}
+
+#links1 a:hover::before, #links2 a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+#main_footer{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding:2% 3% 2% 3%;
+  text-align:center;
+  box-shadow: 0px -20px 30px -15px rgba(0,0,0,0.3);
+}
+
+#footer_networks{
+  padding-top:1%;
+}
+
+#list_networks{
+  display:flex;
+  justify-content: space-between;
+  font-size:1.6em;
+  margin-bottom:0;
+}
+
+#list_networks li:hover{
+  transform:scale(1.3);
+  transition:0.3s ease-in;
+}
+
+#main_footer a{
+  color:#0B005D;
+}
+
+#logo_footer{
+  width:30%;
+}
+
+#links1, #links2{
+  display:flex;
+}
+
+#links1{
+  margin-left:-8%;
+}
+
+#list_links1, #list_links2{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+
