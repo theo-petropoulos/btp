@@ -1,6 +1,7 @@
 /* ---------------------INDEX--------------------- */
 /* 1-ACCUEIL */
 /* 2-PRESENTATION */
+/* ----- 2.1-GRID-POSITION ----- */
 /* 3-EQUIPE */
 /* 4-CONTACT */
 /* 5-REALISATIONS */
@@ -58,18 +59,18 @@ header {
 .nav_underline {
   position: relative;
 }
-	
-.nav_underline::before{
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px; 
-	bottom:-5px;
-	left: 0; 
-	visibility: hidden;
-	transform: scaleX(0);
-  background-color: #3E3A60;
-	transition: all 0.4s ease-in-out;
+
+.nav_underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  background-color: #3e3a60;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav_underline:hover::before {
@@ -143,6 +144,124 @@ header {
 }
 
 /* 2-PRESENTATION */
+
+.mainpresentcontainer {
+  padding: 5%;
+  background: cornflowerblue;
+  text-align: center;
+  background-image: url(images/presentation/presentation.png);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.maintitle {
+  color: rgb(70, 70, 70);
+  background: rgba(216, 216, 216, 0.884);
+}
+.maintitle p {
+  padding: 3%;
+}
+.mainpresent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  background: rgba(214, 214, 214, 0.692);
+}
+
+/* 2.1-GRID POSITION */
+
+/*-------- Titles : div 1 / 4 / 7 / 10 / 13 --------*/
+
+.div1,
+.div4,
+.div7,
+.div10,
+.div13 {
+  font-size: 4em;
+  margin: auto;
+  text-transform: uppercase;
+  color: rgb(65, 65, 65);
+  letter-spacing: 5px;
+}
+
+/* Images : div 2 / 6 / 8 / 12 / 14 */
+.div2 img,
+.div6 img,
+.div8 img,
+.div12 img,
+.div14 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: rgb(86, 160, 206);
+}
+
+/* Texts : div 3 / 5 / 9 / 11 / 15 */
+
+.div3,
+.div5,
+.div9,
+.div11,
+.div15 {
+  color: rgb(70, 70, 70);
+  margin: auto;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.div7 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div8 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div9 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.div10 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.div11 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+.div12 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.div13 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.div14 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.div15 {
+  grid-area: 5 / 3 / 6 / 4;
+}
 
 /* 3-EQUIPE */
 
