@@ -432,6 +432,35 @@ header {
   padding:5%;
 }
 
+#facebook_footer i{
+  color:#4064AC;
+}
+
+#twitter_footer i{
+  color:#34B3F7;
+}
+
+#youtube_footer i{
+  color:#F60002;
+}
+
+#linkedin_footer i{
+  color:#0270AD;
+}
+
+#instagram_footer i{
+  color:#D94176;
+}
+
+#mail_footer i{
+  color:#f7a634;
+}
+
+#hoverable_logo i:hover{
+  transform:scale(1.2);
+  transition:0.4s;
+}
+
 #hoverable_logo:hover #twitter_footer{
   opacity:1;
   transform:translate(-80px, -22px);
