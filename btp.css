@@ -272,37 +272,28 @@ header {
 
 /* 4-CONTACT */
 .contactmain {
-  background: url(images/contact/contact-us-1908762_1280.png);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: right;
+  margin-right: 3%;
   align-items: center;
   text-align: center;
-  height: 110vh;
+  margin-bottom: 3%;
+  color: #0b005d;
 }
 .contactsection1 h1 {
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 .contactsection1 p {
-  font-size: 1.3em;
+  font-size: 0.9em;
 }
 
 .contactform {
   text-align: center;
   padding-left: 5%;
 }
-.contactorganizer {
-  width: 20%;
-  height: 15%;
-  text-align: left;
-  padding-bottom: 20px;
-  background: rgba(68, 117, 160, 0.692);
-}
+
 .contactorganizer label {
   display: block;
   padding-top: 8px;
   padding-left: 15px;
-
   margin: 0% 0 0.5% 0;
 }
 
@@ -311,15 +302,24 @@ select {
   margin-left: 3%;
   width: 90%;
 }
+.formbg {
+  background: url(images/contact/background-contact.jpg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: right;
+}
 
 .myForm {
   display: grid;
-  grid-template-columns: [labels] auto [controls] 1fr;
+  grid-template-columns: [labels] auto [controls] 0.8fr;
   grid-auto-flow: row;
   grid-gap: 0.8em;
-  background: #eee;
-  padding: 1.2em;
-  width: 50%;
+  background: #5d9ce4;
+  color: #0b005d;
+  padding: 1.2%;
+  font-size: 1.3em;
+  width: 45%;
+  margin-left: 3%;
 }
 .myForm > label {
   grid-column: labels;
@@ -505,7 +505,7 @@ select {
   opacity: 1;
   transform: translate(-80px, -22px);
   transition: all 0.5s ease-in-out;
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
   padding: 5%;
 }
 
@@ -513,7 +513,7 @@ select {
   opacity: 1;
   transform: translate(-80px, 20px);
   transition: all 0.5s ease-in-out;
-  transition-delay: 0.6s;
+  transition-delay: 0.2s;
   padding: 5%;
 }
 
@@ -521,7 +521,7 @@ select {
   opacity: 1;
   transform: translate(55px, 20px);
   transition: all 0.5s ease-in-out;
-  transition-delay: 0.9s;
+  transition-delay: 0.3s;
   padding: 5%;
 }
 
@@ -529,7 +529,7 @@ select {
   opacity: 1;
   transform: translate(55px, -22px);
   transition: all 0.5s ease-in-out;
-  transition-delay: 1.2s;
+  transition-delay: 0.4s;
   padding: 5%;
 }
 
@@ -537,7 +537,7 @@ select {
   opacity: 1;
   transform: translate(55px, -65px);
   transition: all 0.5s ease-in-out;
-  transition-delay: 1.5s;
+  transition-delay: 0.5s;
   padding: 5%;
 }
 
