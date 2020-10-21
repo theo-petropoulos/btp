@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link href="images/logo/logo_small_icon_only.png" rel="icon" />
@@ -8,22 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/9ddb75d515.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/9ddb75d515.js" crossorigin="anonymous"></script>
 
     <title>Contact</title>
   </head>
 
   <body class="contactbody">
+
     <header>
-      <a href="accueil.html"
-        ><img src="images/logo/logo_large.png" id="logo"
-      /></a>
+      <a href="accueil.html"><img src="images/logo/logo_large.png" id="logo" alt="logo_parede"/></a>
     </header>
 
-    <main class="accueil main_block">
+    <main id="main_block">
       <nav id="nav_bar">
         <ul>
           <li><a href="accueil.html" class="nav_underline">Accueil</a></li>
@@ -35,24 +32,36 @@
             <a href="contact.html" class="nav_underline">Contactez-nous</a>
           </li>
           <li>
-            <a href="realisations.html" class="nav_underline"
-              >Nos réalisations</a
-            >
+            <a href="realisations.html" class="nav_underline">Nos réalisations</a>
           </li>
         </ul>
       </nav>
 
       <section class="contactsection1">
+
         <h1>Formulaire de contact</h1>
         <p>Si vous désirez nous contacter, veuillez remplir ce formulaire</p>
         <p>Nous reviendrons rapidemment vers vous</p>
+
       </section>
+
       <section class="formbg">
+
+        <div id="help_conseiller">
+          <div id="photo_conseiller">
+            <img src="images/contact/contact.jpg" alt="photo_conseiller">
+          </div>
+          <div id="info_conseiller">
+            <p>Besoin d'aide ?<br><span id="num_telephone">0 807 807 731</span></p>
+            <p id="text_min">Prix d'un appel 8.5€ + 1.5€/mn hors surcoût selon opérateur</p>
+          </div>
+        </div>
+
         <form class="myForm">
-          <label for="customer-type" class="customer-type">
+          <label for="customer-type">
             Quelle est votre situation?
           </label>
-          <select name="customer-type" class="customer-type">
+          <select name="customer-type" id="customer-type" required>
             <option value="">--Veuillez sélectionner--</option>
             <option value="customer">Particulier</option>
             <option value="professionnal">Professionnel</option>
@@ -65,7 +74,6 @@
             type="text"
             name="company-name"
             id="company-name"
-            required
             autocomplete="off"
           />
 
@@ -74,7 +82,6 @@
             type="text"
             name="company-id"
             id="company-id"
-            required
             autocomplete="off"
           />
 
@@ -99,6 +106,8 @@
           <label for="name">Téléphone</label>
           <input
             type="tel"
+            pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+            placeholder="01-02-03-04-05"
             name="phone"
             id="phone"
             required
@@ -111,14 +120,17 @@
             name="email_address"
             id="email_address"
             autocomplete="off"
+            placeholder="john-doe@nomen.com"
+            required
           />
 
-          <label for="comments">Décrivez nous votre projet</label>
+          <label for="comments">Décrivez-nous votre projet</label>
           <textarea
             name="comments"
             id="comments"
             maxlength="500"
             autocomplete="off"
+            required
           ></textarea>
 
           <button>Envoyer</button>
